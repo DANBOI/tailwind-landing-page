@@ -5,7 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>My landing Page</title>
+    <title>Landing Page</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header class="container mx-auto p-6 font-medium">
+      <nav class="flex justify-between items-center">
+        <!-- logo -->
+        <a class="mt-2.5" href="/">
+          <img src="img/logo.svg" alt="logo" />
+        </a>
+        <!-- links -->
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#" class="hover:text-darkGrayishBlue">Pricing</a></li>
+          <li><a href="#" class="hover:text-darkGrayishBlue">Product</a></li>
+          <li><a href="#" class="hover:text-darkGrayishBlue">About Us</a></li>
+          <li><a href="#" class="hover:text-darkGrayishBlue">Community</a></li>
+        </ul>
+        <!-- cta button -->
+        <a
+          href="#"
+          class="hidden md:block px-6 py-2 rounded-full bg-brightRed text-white hover:bg-brightRedLight"
+          >Get Started</a
+        >
+      </nav>
+    </header>
+  </body>
 </html>
