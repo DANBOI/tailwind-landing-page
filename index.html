@@ -9,8 +9,8 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="container mx-auto p-6 font-medium">
-      <nav class="flex justify-between items-center">
+    <header class="p-6 font-medium">
+      <nav class="container mx-auto flex justify-between items-center">
         <!-- logo -->
         <a class="mt-2.5" href="/">
           <img src="img/logo.svg" alt="logo" />
@@ -30,5 +30,34 @@
         >
       </nav>
     </header>
+
+    <!-- Hero section -->
+    <section id="hero" class="p-6">
+      <div
+        class="container md:flex flex-row-reverse gap-4 items-center mx-auto"
+      >
+        <div><img src="img/illustration-intro.svg" alt="intro" /></div>
+        <!-- h1+p -->
+        <div class="flex flex-col items-center space-y-12 mt-6 md:w-1/2">
+          <h1 class="text-4xl text-center font-bold md:text-5xl md:text-left">
+            Lorem ipsum dolor sit amet lorem ipsum.
+          </h1>
+          <p
+            class="text-xl text-center text-darkGrayishBlue mb-auto md:text-left"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            eaque assumenda facere in quibusdam modi.
+          </p>
+          <!-- cta button -->
+          <div class="md:self-start">
+            <a
+              href="#"
+              class="px-6 py-3 rounded-full font-medium bg-brightRed text-white hover:bg-brightRedLight uppercase"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
