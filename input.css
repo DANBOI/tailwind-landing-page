@@ -25,3 +25,35 @@ body {
     background-image: url("../img/bg-simplify-section-mobile.svg");
   }
 }
+
+/* hamburger menu open */
+/* .open-menu {
+  transform: rotate(90deg);
+  transform: translateY(0);
+} */
+
+.open-menu .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open-menu .hamburger-middle {
+  display: none;
+}
+
+.open-menu .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* display the menu */
+.fade-in {
+  visibility: collapse;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  z-index: -99;
+}
+
+.fade-in.show {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}

@@ -17,7 +17,9 @@
         </a>
         <!-- links -->
         <ul class="hidden md:flex space-x-6">
-          <li><a href="#" class="hover:text-darkGrayishBlue">Pricing</a></li>
+          <li>
+            <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+          </li>
           <li><a href="#" class="hover:text-darkGrayishBlue">Product</a></li>
           <li><a href="#" class="hover:text-darkGrayishBlue">About Us</a></li>
           <li><a href="#" class="hover:text-darkGrayishBlue">Community</a></li>
@@ -28,7 +30,33 @@
           class="hidden md:block px-6 pt-2 pb-4 rounded-full bg-brightRed text-white hover:bg-brightRedLight"
           >Get Started</a
         >
+        <!-- hamburger menu button -->
+        <button
+          id="menu-btn"
+          class="relative w-[24px] h-[24px] md:hidden focus:outline-none"
+        >
+          <div
+            class="transition-all duration-500 absolute top-0 left-0 w-full h-[2px] bg-black hamburger-top"
+          ></div>
+          <div
+            class="transition-all duration-500 absolute top-0 left-0 w-full h-[2px] bg-black translate-y-[7px] hamburger-middle"
+          ></div>
+          <div
+            class="transition-all duration-500 absolute top-0 left-0 w-full h-[2px] bg-black translate-y-[14px] hamburger-bottom"
+          ></div>
+        </button>
       </nav>
+      <!-- mobile expend menu -->
+      <div id="menu-list" class="fade-in md:hidden">
+        <div
+          class="absolute top-20 left-6 right-6 flex flex-col divide-y divide-dashed py-8 text-center bg-white font-bold drop-shadow-md sm:w-auto"
+        >
+          <a href="#" class="py-4">Pricing</a>
+          <a href="#" class="py-4">Product</a>
+          <a href="#" class="py-4">About Us</a>
+          <a href="#" class="py-4">Community</a>
+        </div>
+      </div>
     </header>
 
     <!-- Hero section -->
@@ -267,5 +295,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- toggle hamburger menu -->
+    <script src="js/script.js"></script>
   </body>
 </html>
